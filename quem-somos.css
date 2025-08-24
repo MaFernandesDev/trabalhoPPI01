@@ -1,0 +1,25 @@
+.about-us-container {
+    background-color: #2e2e2e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.about-us-container h1 {
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.about-us-text {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.about-us-text p {
+    margin-bottom: 20px;
+}

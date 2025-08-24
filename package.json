@@ -1,0 +1,20 @@
+{
+    "name": "trabalhoppi01",
+    "version": "1.0.0",
+    "description": "aplicação NodeJS / HTTP / Fullstack / Front End",
+    "main": "index.js",
+    "type":"module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MaFernandesDev/trabalhoPPI01.git"
+    },
+    "author": "Maria Eduarda Souza Fernandes",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MaFernandesDev/trabalhoPPI01.git"
+    },
+    "homepage": "https://github.com/MaFernandesDev/trabalho-PPI01.git#readme"
+}

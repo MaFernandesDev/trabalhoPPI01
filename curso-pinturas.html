@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Curso de Pinturas Sacras - Ponto & Afeto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detalhes.css">
+</head>
+<body>
+
+    <script src="index.js"></script>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">Ponto & Afeto</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="course-details">
+            <h1>Curso de Pinturas Sacras</h1>
+            <p><strong>Descrição:</strong> Aprenda a técnica de pinturas sacras, explorando a simbologia e a história por trás das imagens religiosas. Um curso que une arte, fé e devoção.</p>
+            <p><strong>Carga Horária:</strong> 12 horas</p>
+            <p><strong>Instrutor:</strong> Padre João Paulo</p>
+            <p><strong>Nível:</strong> Intermediário</p>
+            <p><strong>Vagas Disponíveis:</strong> <span id="vagas-disponiveis">8</span></p>
+            <div class="price-info">
+                <p><strong>Preço:</strong> R$ 250,00</p>
+                <div class="quantity-selector">
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" min="1" max="8" value="1">
+                </div>
+                <p><strong>Valor Total:</strong> <span id="valor-total">R$ 250,00</span></p>
+            </div>
+            <button class="buy-button">Comprar Agora</button>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const quantidadeInput = document.getElementById('quantidade');
+            const valorTotalSpan = document.getElementById('valor-total');
+            const precoUnitario = 250.00; // Preço do curso de Pinturas Sacras
+
+            quantidadeInput.addEventListener('input', () => {
+                let quantidade = parseInt(quantidadeInput.value);
+                if (isNaN(quantidade) || quantidade < 1) {
+                    quantidade = 1;
+                    quantidadeInput.value = 1;
+                }
+                const valorTotal = quantidade * precoUnitario;
+                valorTotalSpan.textContent = `R$ ${valorTotal.toFixed(2).replace('.', ',')}`;
+            });
+        });
+    </script>
+    
+</body>
+</html>
